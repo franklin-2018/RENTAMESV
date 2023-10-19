@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 rentamesv/rentamesv/settings.py
 requirements.txt
+*.py
+*.txt

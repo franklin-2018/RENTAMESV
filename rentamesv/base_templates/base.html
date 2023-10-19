@@ -41,20 +41,19 @@
      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
      <link rel="stylesheet" href="{% static 'assets/bootstrap/icons-1.11.1/font/bootstrap-icons.css' %}" />
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="{% static "plantilla/fonts/icomoon/style.css" %}">
-<link rel="stylesheet" href="{% static "plantilla/css/bootstrap-datepicker.css" %}">
-<link rel="stylesheet" href="{% static "plantilla/css/jquery.fancybox.min.css" %}">
-<link rel="stylesheet" href="{% static "plantilla/css/owl.carousel.min.css" %}">
-<link rel="stylesheet" href="{% static "plantilla/css/owl.theme.default.min.css" %}">
-<link rel="stylesheet" href="{% static "plantilla/fonts/flaticon/font/flaticon.css" %}">
-<link rel="stylesheet" href="{% static "plantilla/css/aos.css" %}">
+      <link rel="stylesheet" href="{% static "plantilla/fonts/icomoon/style.css" %}">
+      <link rel="stylesheet" href="{% static "plantilla/css/bootstrap-datepicker.css" %}">
+      <link rel="stylesheet" href="{% static "plantilla/css/jquery.fancybox.min.css" %}">
+      <link rel="stylesheet" href="{% static "plantilla/css/owl.carousel.min.css" %}">
+      <link rel="stylesheet" href="{% static "plantilla/css/owl.theme.default.min.css" %}">
+      <link rel="stylesheet" href="{% static "plantilla/fonts/flaticon/font/flaticon.css" %}">
+      <link rel="stylesheet" href="{% static "plantilla/css/aos.css" %}">
 
-<link rel="stylesheet" href="{% static "bootstrap/icons-1.11.1/font/bootstrap-icons.min.css" %}">
-<link rel="stylesheet" href="{% static "bootstrap/icons-1.11.1/font/bootstrap-icons.css" %}">
+      <link rel="stylesheet" href="{% static "bootstrap/icons-1.11.1/font/bootstrap-icons.min.css" %}">
+      <link rel="stylesheet" href="{% static "bootstrap/icons-1.11.1/font/bootstrap-icons.css" %}">
 
-<link rel="stylesheet" href="{% static "bootstrap/icons-1.11.1/font/bootstrap-icons.scss" %}">
+      <link rel="stylesheet" href="{% static "bootstrap/icons-1.11.1/font/bootstrap-icons.scss" %}">
 
   </head>
 
@@ -63,18 +62,25 @@
     {% include "aside.html" %}
     
     {% if user.is_authenticated %}
+
       {% block content %}
 
       {% endblock %}
+
       {% include "footer_after_login.html" %}
+
     {% else %}
+
     {% block content1 %}
+
       {% include "suscrib.html" %}
       {% include "carusel.html" %}
       {% include "filtro_busqueda.html" %}
       {% include "choice_section.html" %}
       {% include "footer.html" %}
+
       {% endblock %}
+
     {% endif %}
         
     {% comment %} <div class="modal fade text-start" role="dialog" tabindex="-1" data-aos="flip-left" data-aos-once="true" id="modal-1">
@@ -149,10 +155,7 @@
     <!-- sidebar -->
     <script src="{% static "plantilla/js/jquery.mCustomScrollbar.concat.min.js" %}"></script>
     <script src="{% static "plantilla/js/custom.js" %}"></script>
-    
-    
 
-    
 
   </body>
 </html>

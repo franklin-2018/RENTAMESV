@@ -134,7 +134,8 @@ def logout_view(request):
 # @login_required
 # def vervehiculos(request):
 #     if (request.user != None and request.user.is_authenticated()):
-        
+
+#vista para convertirse en owner
 @login_required
 def become_owner(request):
     if request.method == 'POST':
